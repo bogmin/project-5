@@ -8,5 +8,9 @@ public class LetterAvg {
 	char letterAvg;
 	private ArrayList<String> stations;
 	
-	
+	public LetterAvg(char letterAvg) throws IOException{
+		this.letterAvg = letterAvg;
+		this.stations = new ArrayList<String>();
+		addStationNames();
+	}
 }
