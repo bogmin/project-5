@@ -13,4 +13,19 @@ public class LetterAvg {
 		this.stations = new ArrayList<String>();
 		addStationNames();
 	}
+	public void addStationNames() throws IOException {
+		BufferedReader readit = new BufferedReader(new FileReader("Mesonet.txt"));
+		//bunch of readLines due to useless lines at top of file
+		String read = readit.readLine();
+		read = readit.readLine();
+		read = readit.readLine();
+		read = readit.readLine();
+		while (read != null) {
+			String stationName = read.substring(1,5);
+				stations.add(stationName);
+				++numStations;
+			read = readit.readLine();
+		}
+		readit.close();
+	}
 }
