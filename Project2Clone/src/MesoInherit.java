@@ -6,4 +6,13 @@ public class MesoInherit extends MesoAbstract {
 	public MesoInherit(MesoStation mesoStation) {
 		this.station = mesoStation;
 	}
+	
+	@Override
+	public int[] calAverage() {
+		
+	}
+	@Override
+	public char letterAverage() {
+		
+	}
 }
