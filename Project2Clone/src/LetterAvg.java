@@ -28,4 +28,13 @@ public class LetterAvg {
 		}
 		readit.close();
 	}
+	public int numberOfStationWithLetterAvg() {
+		int counter = 0;
+		for (int i = 0; i < stations.size(); ++i) {
+			if (letterAvg == stations.get(i).charAt(0)) {
+				++counter;
+			}
+		}
+		return counter; 
+	}
 }
