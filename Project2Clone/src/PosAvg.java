@@ -34,5 +34,14 @@ public class PosAvg {
 		}
 		readit.close();
 	}
+	public int indexOfStation() {
+		int n = 0;
+		for (int i = 0; i < stations.size(); ++i) {
+			if (stID.equalsIgnoreCase(stations.get(i))) {
+				n = i;
+			}
+		}
+		return n + 1;
+	}
 
 }
