@@ -46,4 +46,13 @@ public class LetterAvg {
 		}
 		return whichStations;
 	}
+	@Override
+	public String toString() {
+		ArrayList<String> temp = whichStations();
+		String output = "\nThey are:";
+		for(int i = 0; i < temp.size(); ++i) {
+			output += "\n" + temp.get(i);
+		}
+		return output;
+	}
 }
