@@ -37,4 +37,13 @@ public class LetterAvg {
 		}
 		return counter; 
 	}
+	public ArrayList<String> whichStations() {
+		ArrayList<String> whichStations = new ArrayList<String>();
+		for (int i = 0; i < stations.size(); ++i) {
+			if (letterAvg == stations.get(i).charAt(0)) {
+				whichStations.add(stations.get(i));
+			}
+		}
+		return whichStations;
+	}
 }
