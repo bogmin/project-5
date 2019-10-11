@@ -13,5 +13,9 @@ public class PosAvg {
 		this.stations = new ArrayList<String>();
 		addStationNames();
 	}
+	public PosAvg() throws IOException {
+		addStationNames();
+		this.stations = new ArrayList<String>();
+	}
 
 }
