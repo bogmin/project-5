@@ -4,5 +4,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class LetterAvg {
-
+	int numStations = 0;
+	char letterAvg;
+	private ArrayList<String> stations;
+	
+	
 }
