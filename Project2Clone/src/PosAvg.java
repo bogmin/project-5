@@ -34,6 +34,17 @@ public class PosAvg {
 		}
 		readit.close();
 	}
+	
+	public String[] averageIndex() {
+		String[] stationIndexes = new String[4];
+		int n = indexOfStation() - 1;
+		stationIndexes[0] = stations.get(n - 1);
+		stationIndexes[1] = stations.get(n + 1);
+		stationIndexes[2] = stations.get(n - 2);
+		stationIndexes[3] = stations.get(n + 2);
+		
+		return stationIndexes;
+	}
 	public int indexOfStation() {
 		int n = 0;
 		for (int i = 0; i < stations.size(); ++i) {
