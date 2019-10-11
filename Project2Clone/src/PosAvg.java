@@ -43,5 +43,14 @@ public class PosAvg {
 		}
 		return n + 1;
 	}
+	@Override
+	public String toString() {
+		String[] stations = new String[4];
+		stations = averageIndex();
+		String finale = "This index is average of " + stations[0] + " and " + stations[1] + ", " + stations[2] + " and " + stations[3] +
+				", and so on.";
+		
+		return finale;
+	}
 
 }
