@@ -182,6 +182,22 @@ public class Main extends Application{
 	          }
 	          
 	      });
+	      Button noButton = new Button("No");
+	      noButton.setOnAction(new EventHandler<ActionEvent>() {
+
+	          @Override
+	          public void handle(ActionEvent event) {
+	              Alert bozoAlert = new Alert(AlertType.WARNING);
+	              bozoAlert.setTitle("BOZO ALERT! BOZO ALERT!");
+	              bozoAlert.setContentText("What kinda bozo doesn't like jazz? Bozo police are on their way");
+	              bozoAlert.showAndWait();
+	              // TODO Auto-generated method stub
+	              
+	          }
+	          
+	      });
+	      //String chosen = (String) comboBox.getValue();
+
 
 
 		// TODO Auto-generated method stub
