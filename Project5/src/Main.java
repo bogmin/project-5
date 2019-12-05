@@ -148,6 +148,41 @@ public class Main extends Application{
 	          }
 	          
 	      });
+	      Label colorLabel = new Label("You Like Jazz?");
+	      Button yesButton = new Button("Yes");
+	      yesButton.setOnAction(new EventHandler<ActionEvent>() {
+
+	          @Override
+	          public void handle(ActionEvent event) {
+	              Hyperlink jazzLink = new Hyperlink();
+	              jazzLink.setText("Here's Some Jazz");
+	              vbox.getChildren().addAll(jazzLink);
+	              jazzLink.setOnAction(new EventHandler<ActionEvent>() {
+
+	                  @Override
+	                  public void handle(ActionEvent event) {
+	                      if (Desktop.isDesktopSupported()) {
+	                          try {
+	                              Desktop.getDesktop().browse(new URI("https://youtu.be/TUtcBQCW_zk?t=9"));
+	                          }
+	                          catch (IOException e1) {
+	                              e1.printStackTrace();
+	                          }
+	                          catch (URISyntaxException e2) {
+	                              e2.printStackTrace();
+	                          }
+	                      }
+	                      // TODO Auto-generated method stub
+	                      
+	                  }
+	                  
+	              });
+	              // TODO Auto-generated method stub
+	              
+	          }
+	          
+	      });
+
 
 		// TODO Auto-generated method stub
 		
