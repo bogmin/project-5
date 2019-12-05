@@ -120,6 +120,10 @@ public class Main extends Application{
 	            }
 	            
 	        });
+	        Button addButton = new Button("Add Station");
+	        TextField textField = new TextField();
+	        textField.setPrefWidth(50);
+	        textField.setMaxWidth(50);
 
 		// TODO Auto-generated method stub
 		
