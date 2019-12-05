@@ -47,6 +47,18 @@ public class Main extends Application{
 	        slider.setPrefWidth(100);
 	        slider.setMaxWidth(100);
 
+	        Label sliderLabel = new Label("Enter Hamming Dist " + (int)slider.getValue());
+	        
+	        slider.valueProperty().addListener(new ChangeListener<Number>(){
+
+	            @Override
+	            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+	                sliderLabel.setText("Enter Hamming Dist " + (int)slider.getValue());
+	                // TODO Auto-generated method stub
+	                
+	            }
+	            });
+
 		// TODO Auto-generated method stub
 		
 	}
