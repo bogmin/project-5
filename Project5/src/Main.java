@@ -214,5 +214,37 @@ public class Main extends Application{
 	        ArrayList<String> hammDist3 = new ArrayList<String>();
 	        ArrayList<String> hammDist4 = new ArrayList<String>();
 	        int[] finale = new int[5];
+	        for (int i = 0; i < used.size(); ++i) {
+	            int counter = 0;
+	            for (int j = 0; j < used.get(i).length(); ++j) {
+	                if (choice.charAt(j) != used.get(i).charAt(j)){
+	                    ++counter;
+	                }
+	                
+	                }
+	            if (counter == 0) {
+	                hammDist0.add(used.get(i));
+	            }
+	            else if (counter == 1) {
+	                hammDist1.add(used.get(i));
+	            }
+	            else if (counter == 2) {
+	                hammDist2.add(used.get(i));
+	            }
+	            else if (counter == 3) {
+	                hammDist3.add(used.get(i));
+	            }
+	            else if (counter == 4) {
+	                hammDist4.add(used.get(i));
+	            }
+	        }
+	        finale[0] = hammDist0.size();
+	        finale[1] = hammDist1.size();
+	        finale[2] = hammDist2.size();
+	        finale[3] = hammDist3.size();
+	        finale[4] = hammDist4.size();
+	        
+	        return finale;
+	        }
 	
 }
