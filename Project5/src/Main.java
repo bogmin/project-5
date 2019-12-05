@@ -124,6 +124,30 @@ public class Main extends Application{
 	        TextField textField = new TextField();
 	        textField.setPrefWidth(50);
 	        textField.setMaxWidth(50);
+//	      primaryStage.setScene(new Scene(textField));
+//	      primaryStage.show();
+	      addButton.setOnAction(new EventHandler<ActionEvent>() {
+
+	          @Override
+	          public void handle(ActionEvent event) {
+	              String adding = textField.getText().toUpperCase();
+	              if (adding.length() == 4) {
+	                  addStations(used, adding);
+	                  options.add(adding);
+	                  comboBox.setItems(options);
+	              }
+	              else if (adding.length() != 4){
+	                  Alert alert = new Alert(AlertType.INFORMATION);
+	                  alert.setTitle("Oh, you dolt");
+	                  alert.setHeaderText("You goofed it now");
+	                  alert.setContentText("Try entering a valid station name you dunce");
+	                  alert.showAndWait();
+	              }
+	              // TODO Auto-generated method stub
+	              
+	          }
+	          
+	      });
 
 		// TODO Auto-generated method stub
 		
