@@ -203,11 +203,16 @@ public class Main extends Application{
 	      primaryStage.setTitle("Hamming Distance");
 	      primaryStage.setScene(scene);
 	      primaryStage.show();
-
-
-
-		// TODO Auto-generated method stub
-		
-	}
+}
+	 int[] hammDist0(String choice) throws IOException{
+	        ArrayList<String> used = new ArrayList<String>();
+	        ReadWrite readWrite = new ReadWrite();
+	        used = readWrite.returning();
+	        ArrayList<String> hammDist0 = new ArrayList<String>();
+	        ArrayList<String> hammDist1 = new ArrayList<String>();
+	        ArrayList<String> hammDist2 = new ArrayList<String>();
+	        ArrayList<String> hammDist3 = new ArrayList<String>();
+	        ArrayList<String> hammDist4 = new ArrayList<String>();
+	        int[] finale = new int[5];
 	
 }
