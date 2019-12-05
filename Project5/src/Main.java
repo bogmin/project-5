@@ -32,6 +32,21 @@ public class Main extends Application{
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		 ReadWrite readWrite = new ReadWrite();
+	        ArrayList<String> used = readWrite.returning();
+	        
+	        VBox vbox = new VBox(10);
+	        
+	        Slider slider = new Slider(1,4,1);
+	        slider.setBlockIncrement(1);
+	        slider.setMajorTickUnit(1);
+	        slider.setMinorTickCount(0);
+	        slider.setShowTickLabels(true);
+	        slider.setShowTickMarks(true);
+	        slider.setSnapToTicks(true);
+	        slider.setPrefWidth(100);
+	        slider.setMaxWidth(100);
+
 		// TODO Auto-generated method stub
 		
 	}
