@@ -54,7 +54,7 @@ public class Main extends Application{
 	            @Override
 	            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
 	                sliderLabel.setText("Enter Hamming Dist " + (int)slider.getValue());
-	                // TODO Auto-generated method stub
+	
 	                
 	            }
 	            });
@@ -84,9 +84,7 @@ public class Main extends Application{
 	                Label stations = new Label(finale);
 	                stations.setText(finale);
 	                vbox.getChildren().addAll(stations);
-	                
-	                // TODO Auto-generated method stub
-	                
+	           
 	            }
 	            
 	        });
@@ -101,7 +99,6 @@ public class Main extends Application{
 	                try {
 	                    useful = hammDist0(chosen);
 	                } catch (IOException e) {
-	                    // TODO Auto-generated catch block
 	                    e.printStackTrace();
 	                }
 	                Label dist0 = new Label("Distance 0 " + useful[0]);
@@ -115,7 +112,7 @@ public class Main extends Application{
 	                Label dist4 = new Label("Distance 4 " + useful[4]);
 	                dist4.setText("Distance 4 " + useful[4]);
 	                vbox.getChildren().addAll(dist0, dist1, dist2, dist3, dist4);
-	                // TODO Auto-generated method stub
+	               
 	                
 	            }
 	            
@@ -143,7 +140,7 @@ public class Main extends Application{
 	                  alert.setContentText("Try entering a valid station name you dunce");
 	                  alert.showAndWait();
 	              }
-	              // TODO Auto-generated method stub
+	             
 	              
 	          }
 	          
@@ -172,12 +169,12 @@ public class Main extends Application{
 	                              e2.printStackTrace();
 	                          }
 	                      }
-	                      // TODO Auto-generated method stub
+	                     
 	                      
 	                  }
 	                  
 	              });
-	              // TODO Auto-generated method stub
+	              
 	              
 	          }
 	          
@@ -191,7 +188,6 @@ public class Main extends Application{
 	              bozoAlert.setTitle("BOZO ALERT! BOZO ALERT!");
 	              bozoAlert.setContentText("What kinda bozo doesn't like jazz? Bozo police are on their way");
 	              bozoAlert.showAndWait();
-	              // TODO Auto-generated method stub
 	              
 	          }
 	          
