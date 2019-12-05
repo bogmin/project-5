@@ -197,6 +197,12 @@ public class Main extends Application{
 	          
 	      });
 	      //String chosen = (String) comboBox.getValue();
+	      vbox.getChildren().addAll(sliderLabel, slider, comboBox, displayButton, button, addButton, textField, colorLabel, yesButton, noButton);
+	      
+	      Scene scene = new Scene(vbox, 500, 500);
+	      primaryStage.setTitle("Hamming Distance");
+	      primaryStage.setScene(scene);
+	      primaryStage.show();
 
 
 
