@@ -246,5 +246,14 @@ public class Main extends Application{
 	        
 	        return finale;
 	        }
+	 
+	  ArrayList<String> hammDist1(String choice, int toFind) throws IOException{
+	        ArrayList<String> used = new ArrayList<String>();
+	        ReadWrite readWrite = new ReadWrite();
+	        used = readWrite.returning();
+	        ArrayList<String> hammDist1 = new ArrayList<String>();
+	        ArrayList<String> hammDist2 = new ArrayList<String>();
+	        ArrayList<String> hammDist3 = new ArrayList<String>();
+	        ArrayList<String> hammDist4 = new ArrayList<String>();
 	
 }
