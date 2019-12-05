@@ -59,6 +59,11 @@ public class Main extends Application{
 	            }
 	            });
 
+	        final ObservableList<String> options = FXCollections.observableArrayList(used);
+	        ComboBox comboBox = new ComboBox();
+	        comboBox.setItems(options);
+	        Button displayButton = new Button("Show Stations");
+
 		// TODO Auto-generated method stub
 		
 	}
