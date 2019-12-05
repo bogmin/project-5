@@ -64,6 +64,34 @@ public class Main extends Application{
 	        comboBox.setItems(options);
 	        Button displayButton = new Button("Show Stations");
 
+	        displayButton.setOnAction(new EventHandler<ActionEvent>() {
+
+	            @Override
+	            public void handle(ActionEvent event) {
+	                String chosen = comboBox.getValue().toString();
+	                int dist = (int)slider.getValue();
+	                ArrayList<String> toGet = new ArrayList<String>();
+	                String finale = null;
+	                try {
+	                    toGet = hammDist1(chosen, dist);
+	                } catch (IOException e) {
+	                    e.printStackTrace();
+	                }
+	            //    for(int i = 0; i < toGet.size(); ++i) {
+	            //        finale = toGet.get(i) + "\n";
+	            //    }
+	                finale = toGet.toString();
+	                Label stations = new Label(finale);
+	                stations.setText(finale);
+	                vbox.getChildren().addAll(stations);
+	                
+	                // TODO Auto-generated method stub
+	                
+	            }
+	            
+	        });
+	        
+
 		// TODO Auto-generated method stub
 		
 	}
