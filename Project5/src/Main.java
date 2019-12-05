@@ -255,5 +255,40 @@ public class Main extends Application{
 	        ArrayList<String> hammDist2 = new ArrayList<String>();
 	        ArrayList<String> hammDist3 = new ArrayList<String>();
 	        ArrayList<String> hammDist4 = new ArrayList<String>();
+	        for (int i = 0; i < used.size(); ++i) {
+	            int counter = 0;
+	            for (int j = 0; j < used.get(i).length(); ++j) {
+	                if (choice.charAt(j) != used.get(i).charAt(j)){
+	                    ++counter;
+	                }
+	                
+	                }
+	            if (counter == 1) {
+	                hammDist1.add(used.get(i) + "\n");
+	            }
+	            else if (counter == 2) {
+	                hammDist2.add(used.get(i) + "\n");
+	            }
+	            else if (counter == 3) {
+	                hammDist3.add(used.get(i) + "\n");
+	            }
+	            else if (counter == 4) {
+	                hammDist4.add(used.get(i) + "\n");
+	            }
+	        }
+	        if (toFind == 1) {
+	            return hammDist1;
+	        }
+	        else if(toFind == 2) {
+	            return hammDist2;
+	        }
+	        else if (toFind ==3) {
+	            return hammDist3;
+	        }
+	        else if (toFind == 4) {
+	            return hammDist4;
+	        }
+	        return null;
+	        }
 	
 }
