@@ -290,5 +290,13 @@ public class Main extends Application{
 	        }
 	        return null;
 	        }
+	    private void addStations(ArrayList<String> used, String toAdd) {
+	        used.add(toAdd);
+	    }
+	    
+	    public static void main(String[] args) {
+	        launch(args);
+	    }
+
 	
 }
