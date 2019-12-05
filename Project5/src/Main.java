@@ -91,6 +91,35 @@ public class Main extends Application{
 	            
 	        });
 	        
+	        Button button = new Button("Calculate HD");
+	        button.setOnAction(new EventHandler<ActionEvent>(){
+
+	            @Override
+	            public void handle(ActionEvent event) {
+	                String chosen = comboBox.getValue().toString();
+	                int[] useful = new int[5];
+	                try {
+	                    useful = hammDist0(chosen);
+	                } catch (IOException e) {
+	                    // TODO Auto-generated catch block
+	                    e.printStackTrace();
+	                }
+	                Label dist0 = new Label("Distance 0 " + useful[0]);
+	                dist0.setText("Distance 0 " + useful[0]);
+	                Label dist1 = new Label("Distance 1 " + useful[1]);
+	                dist1.setText("Distance 1 " + useful[1]);
+	                Label dist2 = new Label("Distance 2 " + useful[2]);
+	                dist2.setText("Distance 2 " + useful[2]);
+	                Label dist3 = new Label("Distance 3 " + useful[3]);
+	                dist3.setText("Distance 3 " + useful[3]);
+	                Label dist4 = new Label("Distance 4 " + useful[4]);
+	                dist4.setText("Distance 4 " + useful[4]);
+	                vbox.getChildren().addAll(dist0, dist1, dist2, dist3, dist4);
+	                // TODO Auto-generated method stub
+	                
+	            }
+	            
+	        });
 
 		// TODO Auto-generated method stub
 		
